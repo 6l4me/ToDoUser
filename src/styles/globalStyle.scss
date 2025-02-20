@@ -1,0 +1,53 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Inter Display", sans-serif;
+  --font-size: 12px;
+  --main-color: #fff;
+  --second-color: #373E45;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-inline-size: 402px;
+  max-inline-size: 1728px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  color: var(--main-color);
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

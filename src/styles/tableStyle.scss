@@ -1,0 +1,115 @@
+@import "./globalStyle.scss";
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #4b5258;
+  background-color: #4b5258;
+
+  .headTr {
+    background-color: #3F464C;
+  }
+
+  th {
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--font-family);
+    white-space: nowrap;
+  }
+
+  .userTh {
+    padding: 11px 0 11px 12px;
+    text-align: left;
+  }
+
+  td {
+    text-align: center;
+    background-color: var(--second-color);
+  }
+
+  .userTd {
+    padding: 13px 14px 13px 8px;
+  }
+
+    .userContainer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .userBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .userText {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+  tbody tr {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--main-color);
+    border-bottom: 1px solid #4b5258;
+  }
+
+}
+
+@media (min-width: 834px) {
+  .userTable {
+    th {
+      padding: 7px 7px;
+      font-size: 12px;
+    }
+
+    .toDoTh {
+      width: 168px;
+      text-align: start;
+    }
+
+    .toDoTd {
+      text-align: start;
+    }
+
+    .userTd {
+      .userContainer {
+        gap: 16px;
+      }
+
+      .userText {
+        font-size: 12px;
+      }
+    } 
+    
+
+    tbody tr {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media (min-width: 834px) {
+  .userTable {
+    .numberTh {
+      width: 47px;
+      text-align: center;
+    }
+  }
+}
